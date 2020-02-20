@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="https://www.freeiconspng.com/uploads/soccer-ball-png-19.png" width="30" height="30"
+        class="d-inline-block align-top" alt="">
+      PricePlayer
+    </a>
+  </nav>
+  <div class="container">
+    <h1 class="text-center my-5">Calcula el precio de los jugadores</h1>
+    <div class="row">
+      <div class="col">
+        <form class="form mt-5 portero">
+          <h2>Portero</h2>
+          <div class="form-group">
+            <label for="goalsPerGame">Ingresa el promedio de goles recibidos por partido</label>
+            <input class="form-control" type="number" id="goalsPerGame">
+          </div>
+          <div class="form-group">
+            <label for="savesPerGame">Ingresa el promedio de paradas por partido</label>
+            <input class="form-control" type="number" id="savesPerGame">
+          </div>
+          <div class="form-group">
+            <label for="shootsSaved">Ingresa el porcentaje de tiros atajados</label>
+            <input class="form-control" type="number" id="shootsSaved">
+          </div>
+          <div class="form-group">
+            <label for="ageGoalkeeper">Ingresa la edad</label>
+            <input class="form-control" type="number" id="ageGoalkeeper">
+          </div>
+          <div class="priceGoalkeeper">
+            <p>$0.00</p>
+          </div>
+        </form>
+      </div>
+      <div class="col">
+        <form class="form mt-5 defenza">
+          <h2>Defensa</h2>
+          <div class="form-group">
+            <label for="intPG">Ingresa el promedio de intercepciones por partido</label>
+            <input class="form-control" type="number" id="intPG">
+          </div>
+          <div class="form-group">
+            <label for="regPG">Ingresa el promedio de veces regateado por partido</label>
+            <input class="form-control" type="number" id="regPG">
+          </div>
+          <div class="form-group">
+            <label for="ageDefender">Ingresa la edad</label>
+            <input class="form-control" type="number" id="ageDefender">
+          </div>
+          <div class="priceDefender">
+            <p>$0.00</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <form class="form mt-5 medio">
+          <h2>Mediocampista</h2>
+          <div class="form-group">
+            <label for="ppc">Ingresa el porcentaje de pases completos</label>
+            <input class="form-control" type="number" id="ppc">
+          </div>
+          <div class="form-group">
+            <label for="asists">Total de Asistencias</label>
+            <input class="form-control" type="number" id="asists">
+          </div>
+          <div class="form-group">
+            <label for="ageMid">Ingresa la edad</label>
+            <input class="form-control" type="number" id="ageMid">
+          </div>
+          <div class="priceMid">
+            <p>$0.00</p>
+          </div>
+        </form>
+      </div>
+      <div class="col">
+        <form class="form mt-5 delantero">
+          <h2>Delantero</h2>
+          <div class="form-group">
+            <label for="goalsPerGame2">Ingresa el total de goles</label>
+            <input class="form-control" type="number" id="goalsPerGame2">
+          </div>
+          <div class="form-group">
+            <label for="coef">Ingresa el coeficiente de la liga</label>
+            <input class="form-control" type="number" id="coef">
+          </div>
+          <div class="form-group">
+            <label for="asists2">Total de Asistencias</label>
+            <input class="form-control" type="number" id="asists2">
+          </div>
+          <div class="form-group">
+            <label for="ageFor">Ingresa la edad</label>
+            <input class="form-control" type="number" id="ageFor">
+          </div>
+          <div class="priceStr">
+            <p>$0.00</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
